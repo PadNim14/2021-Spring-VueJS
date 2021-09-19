@@ -5,24 +5,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Lesson 3 Demo 3</title>
+        <title>Nimal's RNG</title>
         <link rel="stylesheet" href="demo3.css" />
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
     <body>
-        <h1 class="heading">Lesson 3, Demo 3</h1>
-        <h2 class="heading">Basic VueJS</h2>
+        <h1 class="heading">Nimal's RNG</h1>
+        <h2 class="">Amuse yourself</h2>
+        <!-- <div id='range'>
+            <p>{{message}}</p>
+            
+            <input type="submit"> -->
+        </div>
         <div id="app">
             <p>{{message}}</p>
+            <p>{{range_mess}}</p>
+            <form><input type="text" v-model="num"></form>
+            <p style="color:red;font-size:40px;"></p><p>{{rng}}</p>
             <div v-if="toggle" class="divBackground">
-                Now you see me!
-            </div>
-            <div v-else>
-                Now you don't!
+                <button v-on:click="set_toggle">Generate!</button>
             </div>
             <br />
-            <button v-on:click="set_toggle">Toggle</button>
+            
         </div>
-        <script src="demo3.js" ></script>
+        <script src="check3.js" ></script>
     </body>
 </html>
